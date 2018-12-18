@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  chat:
+    build: .
+    network: host
+    ports:
+      - "8888:8888/udp"
+    container_name: chatik
